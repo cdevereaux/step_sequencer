@@ -1,13 +1,14 @@
 [package]
-name = "eframe_template"
+name = "step_sequencer"
 version = "0.1.0"
-authors = ["Emil Ernerfeldt <emil.ernerfeldt@gmail.com>"]
+authors = ["Cameron Devereaux"]
 edition = "2021"
 rust-version = "1.65"
 
 
 [dependencies]
 egui = "0.21.0"
+egui_extras = "0.21.0"
 eframe = { version = "0.21.0", default-features = false, features = [
     "accesskit",     # Make egui comptaible with screen readers. NOTE: adds a lot of dependencies.
     "default_fonts", # Embed the default egui fonts.
@@ -17,6 +18,8 @@ eframe = { version = "0.21.0", default-features = false, features = [
 
 # You only need serde if you want app persistence:
 serde = { version = "1", features = ["derive"] }
+
+rodio = { version="0.16.0", default-features = false, features = ["vorbis", "flac", "wav", "wasm-bindgen"] }
 
 # native:
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
