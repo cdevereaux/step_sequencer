@@ -2239,6 +2239,7 @@ dependencies = [
  "eframe",
  "egui",
  "egui_extras",
+ "hound",
  "rodio",
  "serde",
  "tracing-subscriber",

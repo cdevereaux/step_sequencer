@@ -2,4 +2,5 @@
 
 mod app;
 mod instr;
-pub use app::TemplateApp;
+mod synth;
+pub use app::StepSequencer;
