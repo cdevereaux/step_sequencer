@@ -7,7 +7,7 @@ fn main() -> eframe::Result<()> {
 
     let native_options = eframe::NativeOptions::default();
     eframe::run_native(
-        "eframe template",
+        "Step Sequencer",
         native_options,
         Box::new(|cc| Box::new(step_sequencer::StepSequencer::new(cc))),
     )
