@@ -24,6 +24,12 @@ pub enum Oscillator {
     Triangle,
 }
 
+impl std::fmt::Display for Oscillator {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        std::fmt::Debug::fmt(self, f)
+    }
+}
+
 #[derive(Clone, Debug)]
 pub struct MidiNote {
     amplitude: f32,

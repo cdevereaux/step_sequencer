@@ -553,16 +553,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "console_error_panic_hook"
-version = "0.1.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a06aeb73f470f66dcdbf7223caeebb85984942f22f1adb2a088cf9668146bbbc"
-dependencies = [
- "cfg-if",
- "wasm-bindgen",
-]
-
-[[package]]
 name = "core-foundation"
 version = "0.9.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2235,7 +2225,6 @@ checksum = "213701ba3370744dcd1a12960caa4843b3d68b4d1c0a5d575e0d65b2ee9d16c0"
 name = "step_sequencer"
 version = "0.1.0"
 dependencies = [
- "console_error_panic_hook",
  "eframe",
  "egui",
  "egui_extras",
@@ -2243,8 +2232,6 @@ dependencies = [
  "rodio",
  "serde",
  "tracing-subscriber",
- "tracing-wasm",
- "wasm-bindgen-futures",
 ]
 
 [[package]]
@@ -2427,17 +2414,6 @@ dependencies = [
  "thread_local",
  "tracing-core",
  "tracing-log",
-]
-
-[[package]]
-name = "tracing-wasm"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4575c663a174420fa2d78f4108ff68f65bf2fbb7dd89f33749b6e826b3626e07"
-dependencies = [
- "tracing",
- "tracing-subscriber",
- "wasm-bindgen",
 ]
 
 [[package]]
